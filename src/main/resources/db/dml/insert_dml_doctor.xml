@@ -1,0 +1,40 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<databaseChangeLog-->
+<!--        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"-->
+<!--        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"-->
+<!--        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-->
+<!--            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd-->
+<!--            http://www.liquibase.org/xml/ns/dbchangelog-ext-->
+<!--            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">-->
+<!--    <changeSet author="HieuTT" id="4">-->
+<!--        <sql>-->
+<!--            <![CDATA[-->
+<!--                INSERT INTO doctors (username, position, department, hospital, detail)-->
+<!--                VALUES ('John Doe', 'DN', 'MD', 'Board Certified', 'New York');-->
+<!--                INSERT INTO doctors (full_name, experience_years, degree, certification, work_location)-->
+<!--                VALUES ('Jane Smith', 10, 'DO', 'Board Certified', 'Los Angeles');-->
+
+<!--                INSERT INTO degrees (degree_name)-->
+<!--                VALUES ('Bachelor of Medicine');-->
+<!--                INSERT INTO degrees (degree_name)-->
+<!--                VALUES ('Doctor of Medicine');-->
+
+<!--                INSERT INTO doctor_degrees (doctor_id, degree_id)-->
+<!--                VALUES (1, 1);-->
+<!--                INSERT INTO doctor_degrees (doctor_id, degree_id)-->
+<!--                VALUES (1, 2);-->
+
+<!--                INSERT INTO specializations (specialization_name)-->
+<!--                VALUES ('Cardiology');-->
+<!--                INSERT INTO specializations (specialization_name)-->
+<!--                VALUES ('Dermatology');-->
+
+<!--                INSERT INTO doctor_specializations (doctor_id, specialization_id)-->
+<!--                VALUES (1, 1);-->
+<!--                INSERT INTO doctor_specializations (doctor_id, specialization_id)-->
+<!--                VALUES (2, 2);-->
+<!--            ]]>-->
+<!--        </sql>-->
+<!--    </changeSet>-->
+<!--</databaseChangeLog>-->
